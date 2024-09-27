@@ -1,4 +1,4 @@
-# 🍸 Drinks React TypeScript
+# 🍸 Drinks (React + TypeScript)
 
 ## Description
 
