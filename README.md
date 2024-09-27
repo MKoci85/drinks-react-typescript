@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# 🍸 Drinks (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+**Drinks React TypeScript** is a web application that allows users to search for drinks by ingredients and categories, as well as save their favorite drinks. The application is built using React and TypeScript, providing a fast and efficient user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🔍 **Drink Search**: Search for drinks by ingredients and categories.
+- 💾 **Favorites**: Save your favorite drinks for easy access.
+- 📋 **Detailed Recipes**: View detailed recipes for each drink.
+- 🖥️ **User-Friendly Interface**: Intuitive and easy-to-use interface.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat) **React**: JavaScript library for building user interfaces.
+- ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat) **TypeScript**: A superset of JavaScript that adds static types.
+- ![React Router](https://img.shields.io/badge/-React_Router_DOM-CA4245?logo=react-router&logoColor=white&style=flat) **React Router DOM**: Library for handling routing in React applications.
+- ![Zustand](https://img.shields.io/badge/-Zustand-000000?logo=buffer&logoColor=white&style=flat) **Zustand**: A small, fast, and scalable state-management solution for React.
+- ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat) **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🚀 Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Follow these steps to install and run the application locally:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/TheMarian85/drinks-react-typescript.git
+
+   
+2. Navigate to the project directory:
+   ```bash
+   cd drinks-react-typescript
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Start the application:
+   ```bash
+   npm start
+
+## 🖱️ Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Use the search bar to find drinks by ingredients or categories.
+3. Click on a drink to view its detailed recipe.
+4. Save your favorite drinks for easy access in the future.
+
+
+## 🤝 Contributing
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/new-feature
+
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+
+4. Push your changes to your forked repository:
+   ```bash
+   git push origin feature/new-feature
+
+5. Open a Pull Request on GitHub.
+
+
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## 📞 Contact
+For any questions or suggestions, you can contact me via 
+<a href="https://www.linkedin.com/in/mkoci/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20px" style="vertical-align:middle;"/> LinkedIn
+</a>.
