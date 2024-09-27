@@ -16,7 +16,9 @@
 - ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat) **React**: JavaScript library for building user interfaces.
 - ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat) **TypeScript**: A superset of JavaScript that adds static types.
 - ![React Router](https://img.shields.io/badge/-React_Router_DOM-CA4245?logo=react-router&logoColor=white&style=flat) **React Router DOM**: Library for handling routing in React applications.
-- ![CSS Modules](https://img.shields.io/badge/-CSS%20Modules-1572B6?logo=css3&logoColor=white&style=flat) **CSS Modules**: For modular and reusable styles.
+- ![Zustand](https://img.shields.io/badge/-Zustand-000000?logo=buffer&logoColor=white&style=flat) **Zustand**: A small, fast, and scalable state-management solution for React.
+- ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat) **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+
 
 ## 🚀 Installation
 
