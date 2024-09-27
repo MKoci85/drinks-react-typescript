@@ -1,3 +1,4 @@
+import { useMemo } from "react"
 import DrinkCard from "../components/DrinkCard"
 import { useAppStore } from "../stores/useAppStore"
 
@@ -6,11 +7,13 @@ import { useAppStore } from "../stores/useAppStore"
 export default function FavoritesPage() {
 
   const favorites = useAppStore((state) => state.favorites)
+  const hasFavorites = useMemo(()=> favorites.length, [favorites])
 
   return (
     <>
       <h1 className="text-6xl font-extrabold text-white">Favorites</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 my-10 gap-10 ">
+      {hasFavorites ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 my-10 gap-10 ">
         {favorites.map(drink => (
           <DrinkCard 
             key={drink.idDrink}
@@ -18,6 +21,11 @@ export default function FavoritesPage() {
           />
         ))}
       </div>
+      ) : (
+        <p className="my-10 text-center text-2xl text-white">
+          You haven’t added any favorite drinks yet. Start exploring and add your top picks to this list!
+        </p>
+      )}
     </>
   )
 }

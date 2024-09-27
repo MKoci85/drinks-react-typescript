@@ -15,6 +15,7 @@ export default function Header() {
     const fetchCategories = useAppStore((state) => state.fetchCategories)
     const { drinks } = useAppStore((state) => state.categories)
     const searchRecipes = useAppStore((state) => state.searchRecipes)
+    const showNotification = useAppStore((state) => state.showNotification)
     
 
     useEffect(() => {
@@ -33,7 +34,7 @@ export default function Header() {
 
         //Validate
         if(Object.values(searchFilters).includes('')){
-            console.log('all fields are required')
+            showNotification({text: 'All fields are required', error:true})
             return
         }
 
@@ -107,7 +108,7 @@ export default function Header() {
                         <input 
                             type="submit" 
                             value="Search" 
-                            className="cursor-pointer bg-orange-400 py-2 hover:bg-orange-600 shadow shadow-white text-white font-extrabold w-full rounded-lg uppercase"
+                            className="cursor-pointer bg-orange-600 py-2 hover:bg-orange-400 shadow shadow-white text-white font-extrabold w-full rounded-lg uppercase"
                         
                         />
                     </form>
